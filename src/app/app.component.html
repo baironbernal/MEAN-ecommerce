@@ -1,13 +1,17 @@
 <header>
       <mat-toolbar color="primary">
             <mat-toolbar-row>
-              <span>Custom Toolbar</span>
+              <span>Custom Toolbars</span>
             </mat-toolbar-row>
           
             <mat-toolbar-row>
-              <span>Second Line</span>
-              <span class="example-spacer"></span>
+              <a routerLink="/login" routerLinkActive="active-link"><span>Login</span></a>
               <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">verified_user</mat-icon>
+            </mat-toolbar-row>
+
+            <mat-toolbar-row>
+              <a routerLink="/products" routerLinkActive="active-link"><span>Products</span></a>
+              <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon"></mat-icon>
             </mat-toolbar-row>
           
             <mat-toolbar-row>
