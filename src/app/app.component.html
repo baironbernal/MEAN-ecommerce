@@ -5,7 +5,8 @@
             </mat-toolbar-row>
           
             <mat-toolbar-row>
-              <a routerLink="/login" routerLinkActive="active-link"><span>Login</span></a>
+              <a *ngIf="!user" routerLink="/login" routerLinkActive="active-link"><span>Login</span></a>
+              <a *ngIf="user" (click)="logout()"><span>Account</span></a>
               <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">verified_user</mat-icon>
             </mat-toolbar-row>
 
